@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="./CaptureV1.js"></script>
+    <link href="./CaptureV1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="bg-rib"></div>
+        <img src="white2.png" id="logo"/>
+        <h1 class="text-center headerText">Capture V1 Testbed</h1>
+    </div>
+    <div id="sidebar" class="col-lg-2 container text-left form-left">
+        <label for="Key">Key:</label>
+        <input class="form-control" id="key" type="text" value="KF89-YJ52-JB69-PF45">
+        <br />
+        <label for="Method">Method:</label>
+        <select class="form-control" id="Method">
+            <option value="Match" selected>Match</option>
+            <option value="Predict">Predict</option>
+            <option value="Cleanse">Cleanse</option>
+        </select>
+        <label for="Container">Container:</label>
+        <input class="form-control" id="Container" type="text" value="">
+        <label for="Origin">Origin:</label>
+        <input class="form-control" id="Origin" type="text" value="GBR">
+        <label for="Filter">Filter:</label>
+        <select class="form-control" id="Filter">
+            <option value="Address" selected>Address</option>
+            <option value="Street">Street</option>
+            <option value="Locality">Locality</option>
+            <option value="PostalCode">PostalCode</option>
+        </select>
+        <label for="Limit">Limit:</label>
+        <input class="form-control" id="Limit" type="text" value="8">
+        <label for="Language">Language:</label>
+        <input class="form-control" id="Language" type="text" value="en">
+        <label for="Countries">Countries:</label>
+        <input class="form-control" id="Countries" type="text" value="">
+        <br />
+        <h4>Retrieve Formatted Fields</h4>
+        <label for="Field1Format">Field1Format:</label>
+        <input class="form-control" id="Field1Format" type="text" value="{Latitude}">
+        <label for="Field2Format">Field2Format:</label>
+        <input class="form-control" id="Field2Format" type="text" value="{Longitude}">
+        <label for="Field3Format">Field3Format:</label>
+        <input class="form-control" id="Field3Format" type="text" value="">
+        <label for="Field4Format">Field4Format:</label>
+        <input class="form-control" id="Field4Format" type="text" value="">
+        <label for="Field5Format">Field5Format:</label>
+        <input class="form-control" id="Field5Format" type="text" value="">
+        <label for="Field6Format">Field6Format:</label>
+        <input class="form-control" id="Field6Format" type="text" value="">
+        <label for="Field7Format">Field7Format:</label>
+        <input class="form-control" id="Field7Format" type="text" value="">
+        <label for="Field8Format">Field8Format:</label>
+        <input class="form-control" id="Field8Format" type="text" value="">
+        <label for="Field9Format">Field9Format:</label>
+        <input class="form-control" id="Field9Format" type="text" value="">
+        <label for="Field10Format">Field10Format:</label>
+        <input class="form-control" id="Field10Format" type="text" value="">
+    </div>
+    <div class="col-lg-6 container text-center">
+        <input type="text" id="search" class="form-control" placeholder="Start Typing Your Address..."/>
+        <select id="select" class="form-control visibliltyToggle">
+            <option></option>
+        </select>
+        <br />
+        <p id="output"></p>
+        <br />
+        <button class="btn btn-default visibliltyToggle" id="infoToggle">Toggle Full Response</button>
+        <br />
+
+        <br />
+        <div contenteditable="" id="fulldump" class="visibliltyToggle"></div>  
+    </div>
+    <div class="col-lg-4">
+        <div  id="finddump" class="" style="">
+        <div id="find/retrieve">
+            <table id="urlTable">
+                <tr>
+                    <td>Find:</td>
+                    <td id="findURL"></td>
+                </tr>
+                <tr>
+                    <td>Retrieve:</td>
+                    <td id="retrieveURL"></td>
+                </tr>
+            </table>
+            <br />
+        </div>
+        </div>
+    </div>
+</body>
+</html>

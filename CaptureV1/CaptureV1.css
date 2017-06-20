@@ -1,0 +1,95 @@
+﻿* {
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    margin-bottom: 0px;
+}
+#select {
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    background-color:rgba(229,229,229,0.4);
+}
+.visibliltyToggle{
+    visibility:hidden;
+}
+.jumbotron {
+    background-color: #005bb6;
+}
+.jumbotron h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 50px;
+    color: #FFFFFF;    
+}
+.jumbotron {
+    /*margin-top:25px;*/
+    margin-bottom:40px;    
+    background-image:  url(support-ribbon.png);
+    background-position-x: -10px;
+    background-position-y: -60px;
+}
+#logo {
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    height:170px; 
+    width: 200px;
+}
+.form-left {
+    padding: 25px;
+}
+input, select {
+    padding:4px;
+    margin-left:10px;
+}
+label {
+    padding:4px;
+}
+#select {
+    border-radius: 0px;
+    border-top:0px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 300px; 
+    overflow-y: scroll;
+}
+label {
+    color:#0CA682;
+}
+h4 {
+    color:#0CA682;
+}
+#finddump {
+    overflow-y:scroll; 
+    max-height:500px;
+    max-width:inherit;
+}
+#fulldump {
+    max-width:inherit;
+    overflow-x:scroll;
+}
+td {
+    padding-left: 7px;
+    padding-right:7px;
+}
+#sidebar {
+    max-height:500px;
+    overflow-y:scroll;
+}
+#urlTable td {
+    border: solid 1px;
+    max-width: 480px;
+    word-wrap:break-word;
+}
+.form-control {
+    border-radius: 0px;
+}
+option {
+    padding-top:3px;
+    padding-bottom: 3px;
+}
+select:active, select:hover {
+  outline-color: #f0f0f0;
+  background-color:#f0f0f0;
+}
